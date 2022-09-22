@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Security/Security.h>
 
-@interface KeychainWrapper : NSObject
+@interface OldKeychainWrapper : NSObject
 
 - (void)mySetObject:(id)inObject forKey:(id)key;
 - (id)myObjectForKey:(id)key;

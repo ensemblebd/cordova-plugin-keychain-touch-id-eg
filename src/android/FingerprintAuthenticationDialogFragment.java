@@ -84,7 +84,7 @@ public class FingerprintAuthenticationDialogFragment extends DialogFragment
         Log.d(TAG, "dialogMode: " + dialogMode);
         try {
             int fingerprint_auth_dialog_title_id = getResources()
-                .getIdentifier("fingerprint_auth_dialog_title", "string", FingerprintAuth.packageName);
+                .getIdentifier("old_biometrics_fingerprint_auth_dialog_title", "string", FingerprintAuth.packageName);
             getDialog().setTitle(getString(fingerprint_auth_dialog_title_id));
             int fingerprint_dialog_container_id = getResources()
                 .getIdentifier("fingerprint_dialog_container", "layout", FingerprintAuth.packageName);
@@ -164,7 +164,7 @@ public class FingerprintAuthenticationDialogFragment extends DialogFragment
 
     private void updateStage() {
         int cancel_id = getResources()
-                .getIdentifier("cancel", "string", FingerprintAuth.packageName);
+                .getIdentifier("old_biometrics_cancel", "string", FingerprintAuth.packageName);
         switch (mStage) {
             case FINGERPRINT:
                 mCancelButton.setText(cancel_id);

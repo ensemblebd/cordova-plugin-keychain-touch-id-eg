@@ -1,24 +1,24 @@
 //
-//  KeychainWrapper.h
+//  OldKeychainWrapper.h
 //  Apple's Keychain Services Programming Guide
 //
 //  Created by Tim Mitra on 11/17/14.
 //  Copyright (c) 2014 Apple. All rights reserved.
 //
 
-#import "KeychainWrapper.h"
+#import "OldKeychainWrapper.h"
 
 //Unique string used to identify the keychain item:
 static const UInt8 kKeychainItemIdentifier[]    = "com.apple.dts.KeychainUI\0";
 
-@interface KeychainWrapper ()
+@interface OldKeychainWrapper ()
 
 @property (nonatomic, strong) NSMutableDictionary *keychainData;
 @property (nonatomic, strong) NSMutableDictionary *genericPasswordQuery;
 
 @end
 
-@interface KeychainWrapper (PrivateMethods)
+@interface OldKeychainWrapper (PrivateMethods)
 
 //The following two methods translate dictionaries between the format used by
 // the view controller (NSString *) and the Keychain Services API:
@@ -30,7 +30,7 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.apple.dts.KeychainUI\0";
 @end
 
 
-@implementation KeychainWrapper
+@implementation OldKeychainWrapper
 
 - (instancetype)init
 {

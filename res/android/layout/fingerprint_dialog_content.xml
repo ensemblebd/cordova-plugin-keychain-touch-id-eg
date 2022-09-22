@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="@string/fingerprint_description"
+        android:text="@string/old_biometrics_fingerprint_description"
         android:textAppearance="@android:style/TextAppearance.Material.Subhead"
         android:textColor="?android:attr/textColorSecondary"/>
 
@@ -53,6 +53,6 @@
         android:layout_marginStart="16dp"
         android:layout_toEndOf="@+id/fingerprint_icon"
         android:gravity="center_vertical"
-        android:text="@string/fingerprint_hint"
-        android:textColor="@color/kc_hint_color" />
+        android:text="@string/old_biometrics_fingerprint_hint"
+        android:textColor="@color/old_kc_hint_color" />
 </RelativeLayout>
