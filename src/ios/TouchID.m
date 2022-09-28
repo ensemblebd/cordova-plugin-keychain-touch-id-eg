@@ -78,7 +78,7 @@
 	 	self.TAG = (NSString*)[command.arguments objectAtIndex:0];
     NSString* password = (NSString*)[command.arguments objectAtIndex:1];
     @try {
-        self.MyKeychainWrapper = [[KeychainWrapper alloc]init];
+        self.MyKeychainWrapper = [[OldKeychainWrapper alloc]init];
         [self.MyKeychainWrapper mySetObject:password forKey:(__bridge id)(kSecValueData)];
         [self.MyKeychainWrapper writeToKeychain];
         [[NSUserDefaults standardUserDefaults]setBool:true forKey:self.TAG];
@@ -99,7 +99,7 @@
 
         if(self.TAG && [[NSUserDefaults standardUserDefaults] objectForKey:self.TAG])
         {
-            self.MyKeychainWrapper = [[KeychainWrapper alloc]init];
+            self.MyKeychainWrapper = [[OldKeychainWrapper alloc]init];
             [self.MyKeychainWrapper resetKeychainItem];
         }
 
@@ -120,7 +120,7 @@
     self.TAG = (NSString*)[command.arguments objectAtIndex:0];
     NSString* message = (NSString*)[command.arguments objectAtIndex:1];
     LAContext *context = [[LAContext alloc] init];
-    self.MyKeychainWrapper = [[KeychainWrapper alloc]init];
+    self.MyKeychainWrapper = [[OldKeychainWrapper alloc]init];
 
     BOOL hasLoginKey = [[NSUserDefaults standardUserDefaults] boolForKey:self.TAG];
     if(hasLoginKey){

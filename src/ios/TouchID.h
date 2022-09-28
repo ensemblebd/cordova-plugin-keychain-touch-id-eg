@@ -18,7 +18,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "KeychainWrapper.h"
+#import "OldKeychainWrapper.h"
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 #import <LocalAuthentication/LocalAuthentication.h>
@@ -26,7 +26,7 @@
 @interface TouchID : CDVPlugin {}
 
 @property (strong,nonatomic)NSString* TAG;
-@property (strong, nonatomic) KeychainWrapper* MyKeychainWrapper;
+@property (strong, nonatomic) OldKeychainWrapper* MyKeychainWrapper;
 //@property (strong, nonatomic) LAContext* laContext;
 
 - (void) isAvailable:(CDVInvokedUrlCommand*)command;
