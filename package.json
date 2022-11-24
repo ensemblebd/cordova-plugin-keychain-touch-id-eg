@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id-eg.git"
+    "url": "git+https://github.com/ensemblebd/cordova-plugin-keychain-touch-id-eg.git"
   },
   "keywords": [
     "TouchID",
@@ -31,9 +31,9 @@
   "author": "S.J.Hoeksma",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id-eg/issues"
+    "url": "https://github.com/ensemblebd/cordova-plugin-keychain-touch-id-eg/issues"
   },
-  "homepage": "https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id-eg#readme",
+  "homepage": "https://github.com/ensemblebd/cordova-plugin-keychain-touch-id-eg#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
