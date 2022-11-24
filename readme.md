@@ -1,6 +1,6 @@
 
 
-# cordova-plugin-keychain-touch-id 
+# cordova-plugin-keychain-touch-id-eg 
 
 A cordova plugin adding the iOS TouchID / Android fingerprint to your app and allowing you to store a password securely in the device keychain.
 
@@ -11,13 +11,13 @@ Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman), co
 
 From npm:
 ```
-$ cordova plugin add cordova-plugin-keychain-touch-id
+$ cordova plugin add cordova-plugin-keychain-touch-id-eg
 $ cordova prepare
 ```
 
 The latest, from the master repo:
 ```
-$ cordova plugin add https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id
+$ cordova plugin add https://github.com/ensemblebd/cordova-plugin-keychain-touch-id-eg
 $ cordova prepare
 ```
 
